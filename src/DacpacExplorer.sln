@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DacpacExplorer", "DacpacExplorer\DacpacExplorer.csproj", "{E0BA6E39-10B0-48E6-9D72-AB160A4C8B8C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SampleSchema", "SampleSchema\SampleSchema.sqlproj", "{3B18B5EC-A3F8-422E-9EF9-411078E24D5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectEnumerator", "ObjectEnumerator\ObjectEnumerator.csproj", "{A42CD23A-575C-4017-A68B-0BDBBDFDBA51}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SampleDatabaseProject-01", "SampleDatabaseProject-01\SampleDatabaseProject-01.sqlproj", "{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,8 +31,17 @@ Global
 		{A42CD23A-575C-4017-A68B-0BDBBDFDBA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A42CD23A-575C-4017-A68B-0BDBBDFDBA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A42CD23A-575C-4017-A68B-0BDBBDFDBA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CB0A9B-56D4-4423-BD4F-6C4327E533F8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D56D7027-9871-4F70-83AF-899B2FA41689}
 	EndGlobalSection
 EndGlobal
