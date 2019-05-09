@@ -11,7 +11,7 @@ namespace ObjectEnumerator
     {
         static void Main(string[] args)
         {
-            var tmp = new TSqlModel(@"c:\users\ed\desktop\AdventureWorks2012.dacpac");
+            TSqlModel tmp = new TSqlModel(@"..\..\..\SampleDatabaseProject-01\bin\Debug\SampleDatabaseProject-01.dacpac");
             var tables = tmp.GetObjects(DacQueryScopes.All, ModelSchema.Table);
             foreach (var table in tables)
             {
@@ -20,18 +20,20 @@ namespace ObjectEnumerator
 
                 DumpScript(table);
 
-                foreach ( var child in table.GetChildren())
+                foreach (var child in table.GetChildren())
                 {
                     Console.WriteLine(child.Name);
                     Console.WriteLine(child.ObjectType.Name);
 
                     DumpChildren(child, 1);
                 }
-                
+
             }
+            Console.WriteLine("Press a key to exit...");
+            Console.ReadKey();
         }
 
-      static  void DumpChildren(TSqlObject parent, int depth)
+        static  void DumpChildren(TSqlObject parent, int depth)
       {
           DumpScript(parent);
           foreach (var property in parent.ObjectType.Properties)
