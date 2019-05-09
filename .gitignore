@@ -182,3 +182,4 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 /src/.vs/DacpacExplorer/v15/Server/sqlite3
+/src/SampleSchema/SampleSchema.jfm
